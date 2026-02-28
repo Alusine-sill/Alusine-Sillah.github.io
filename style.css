@@ -1,0 +1,102 @@
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f4f4f4;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 20px;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        .section {
+            padding: 40px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .project-card h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .project-card a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #3498db;
+            text-decoration: none;
+        }
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .skill-tag {
+            background: #3498db;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        .contact-info {
+            text-align: center;
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .contact-info p {
+            margin: 10px 0;
+        }
+        .btn {
+            display: inline-block;
+            background: #2c3e50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 5px;
+        }
+        .btn:hover {
+            background: #34495e;
+        }
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .p{
+            color : black;
+        }
