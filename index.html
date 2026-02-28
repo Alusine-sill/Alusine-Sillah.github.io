@@ -26,19 +26,76 @@
 
 <script>
       function contact() {
-      const comment = `</section>
-
-    <section class="section">
+      const comment = `<section id="contact" class="contact">
         <div class="container">
-            <h2>Contact Me</h2>
-            <div class="contact-info">
-                <p style="color:black">📧 Email: alusinesillah33048@gmail.com</p>
-                <p style="color:black">📞 Phone: 5383270</p>
-                <p style="color:black" >📍 Location: Bundung Borehole, The Gambia</p>
-                <p style="color:black">🔗 GitHub: <a href="https://github.com/Alusine-sill" target="_blank">github.com/Alusine-Sillah</a></p>
+            <h2 class="section-title">Get In Touch</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+220 5383270<br>+220 6927010<br>+232 74381717</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>alusinesillah33048@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Bundung Borehole, The Gambia</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h4>GitHub</h4>
+                            <p><a href="https://github.com/Alusine-sill" target="_blank">github.com/Alusine-sill</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="cv-download">
+                        <a href="#" class="btn btn-primary" onclick="window.print()">
+                            <i class="fas fa-download"></i> Download CV (Print)
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send Me a Message</h3>
+                    <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
             </div>
-            </div>
+        </div>
     </section>
+               
+            
     <a style="color:gold" href="index.html"> GO-BACK</a> 
 `;
       return comment;
@@ -50,9 +107,36 @@
             <div id="aboutMe">
              <H2> ABOUT ME </H2>   
             <p   style="text-align: center; max-width: 800px; margin: auto;color: black">
-              
-                I'm a self-taught web developer based in Bundung Borehole, The Gambia. With a background in Social Work from Fourah Bay College, I bring a unique human-centered approach to web development. Over the past 10 months, I've built a fully functional school portal using PHP, MySQL, and JavaScript, demonstrating my ability to learn complex skills independently and deliver practical solutions.
+            I hold a BSc in Social Work from Fourah Bay College, University of Sierra Leone, and completed foundational computer training at Allawalie Computer Trainning School (2016-2017) where I developed my initial interest in data management through Excel and Access.</p>
+            <p>Over the past 10 months, I've intensively studied web development and built a fully functional school portal currently running online. My unique background combines community understanding with technical skills.   
             </p>
+            <p>A highly motivated and solutions-focused Web Developer with a solid academic foundation in Social Work from Fourah Bay College, University of Sierra Leone, and practical teaching experience. Over the past 10 months, I have engaged in intensive, self-directed learning to master web development technologies, culminating in the successful creation of a fully functional, database-driven school portal currently deployed and running on InfinityFree.</p>
+                    
+            <p>My unique background combines the empathy, communication skills, and community understanding gained from my Social Work degree with the technical rigor of programming. My current role as an educator at Muhammad Yadalleu English and Arabic School has further strengthened my ability to understand user needs, communicate complex ideas clearly, and manage multiple responsibilities effectively.</p>
+                    
+            <p>I am now seeking an opportunity to transition into the technology sector in The Gambia, where I can apply this rare blend of human-centered understanding and technical capability to support IT infrastructure, digital transformation, and operational efficiency of forward-thinking organizations.</p>
+           <div class="about-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-code"></i>
+                            <span>10+ Months Coding</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-database"></i>
+                            <span>Full-Stack Developer</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <span>Educator since 2023</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-university"></i>
+                            <span>BSc Social Work</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
             </div>
            <button class="btn" onclick=" document.getElementById('aboutMe').innerHTML =technicalSkills() ">My Technical Skills</button> 
            <button class="btn" onclick=" document.getElementById('aboutMe').innerHTML =projects() ">My Project</button>
@@ -65,7 +149,7 @@
       function technicalSkills() {
         const skills = `<section class="section">
         <div class="container">
-            <h2>Technical Skills</h2>
+            <h2>Technical Development Skills</h2>
             <div class="skills">            
                 <div class="skills">            
                 <span class="skill-tag">HTML5</span> 
@@ -77,7 +161,24 @@
                 <span class="skill-tag">Responsive Design</span>
                 <span class="skill-tag">AI-Assisted Development</span>         
             </div>          
-            </div>    
+            </div> 
+            <!-- Professional Skills -->
+            <div class="skills-category">
+                <h3><i class="fas fa-users"></i> Professional & Transferable Skills</h3>
+                <div class="professional-skills">
+                    <div class="prof-skill">Communication</div>
+                    <div class="prof-skill">Problem-Solving</div>
+                    <div class="prof-skill">Project Management</div>
+                    <div class="prof-skill">Interpersonal</div>
+                    <div class="prof-skill">Needs Assessment</div>
+                    <div class="prof-skill">Teaching & Mentoring</div>
+                    <div class="prof-skill">Adaptability</div>
+                    <div class="prof-skill">Time Management</div>
+                    <div class="prof-skill">Analytical Thinking</div>
+                    <div class="prof-skill">Client-Centered Approach</div>
+                </div>
+            </div>
+        </div>
         </div>      
     </section>
      <button style="color:blue" onclick=" document.getElementById('contact').innerHTML =aboutMe() ">RETURN</button>
@@ -100,64 +201,292 @@
                 <a href="https://alusine-sill.github.io/Alusine-Sillah.github.io/" target="_blank">View Code on GitHub →</a><br>
                 <a href="https://myeas-school-portal.kesug.com" target="_blank">View Live Demo →</a>
             </div>
+            <div class="featured-project">
+                <div class="project-badge">LIVE DEMO</div>
+                <h3>Comprehensive School Portal</h3>
+                <div class="project-tech">
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                    <span>JavaScript</span>
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                </div>
+                
+                <div class="project-content">
+                    <div class="project-description">
+                        <p>A fully functional, database-driven web application designed to streamline core administrative tasks for educational institutions. This flagship project represents the culmination of my first year of intensive web development study, demonstrating end-to-end development capabilities.</p>
+                        
+                        <h4>Key Modules Developed:</h4>
+                        <ul>
+                            <li><strong>Secure User Authentication:</strong> Role-based access for Admin, Teacher, Parents, and Students using PHP sessions</li>
+                            <li><strong>Student Database Management:</strong> Full CRUD operations with MySQL database</li>
+                            <li><strong>Dynamic Interface:</strong> Responsive design working on desktop and mobile</li>
+                        </ul>
+                        
+                        <div class="project-links">
+                            <a href="https://myeas-school-portal.kesug.com" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt"></i> View Live Project
+                            </a>
+                            <a href="https://github.com/Alusine-sill/school-portal" target="_blank" class="btn btn-secondary">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-image">
+                        <!-- Add screenshot of your portal here -->
+                        <img src="assets/images/portal-screenshot.jpg" alt="School Portal Screenshot">
+                    </div>
+                </div>
+            </div>
+        </div>
         <button style="color:blue" onclick=" document.getElementById('contact').innerHTML =aboutMe() ">RETURN</button>
     </section>     
     ` ;
         return project;
        };
        function education() {
-        const degree = `<section id="education" class="section">
+        const degree = `<section id="education" class="education">
         <div class="container">
-            <h2>Education</h2>
-            <div style="text-align: center; color: black">
-                <h3>Bachelor of Science in Social Work</h3>
-                <p>Fourah Bay College, University of Sierra Leone</p>
-                <p>Graduated: 2017</p>
+            <h2 class="section-title">Education & Certifications</h2>
+            
+            <div class="education-grid">
+                <!-- University -->
+                <div class="education-card">
+                    <div class="edu-icon"><i class="fas fa-university"></i></div>
+                    <h3>Bachelor of Science in Social Work</h3>
+                    <h4>Fourah Bay College, University of Sierra Leone</h4>
+                    <p class="edu-date">Graduated: 2017/2018</p>
+                    <p><strong>Relevant Coursework:</strong> Sociology, Psychology, Community Development, Social Research Methods, Counseling Skills</p>
+                </div>
+                
+                <!-- Allamal Certificate -->
+                <div class="education-card featured-cert">
+                    <div class="edu-icon"><i class="fas fa-certificate"></i></div>
+                    <h3>Certificate in Computer Software Applications</h3>
+                    <h4>Allawalie Computer Training School | Shell Kissy, Sierra Leone</h4>
+                    <p class="edu-date">January 2016 - July 2017 (18-month program)</p>
+                    
+                    <div class="cert-details">
+                        <h5>Software Programs Completed:</h5>
+                        <ul>
+                            <li><strong>MS-Windows:</strong> File management, system navigation</li>
+                            <li><strong>MS-Word:</strong> Document creation, formatting, mail merge</li>
+                            <li><strong>MS-Excel:</strong> Formulas (SUM, VLOOKUP, HLOOKUP, XLOOKUP, INDEX MATCH) - where my programming interest sparked!</li>
+                            <li><strong>MS-Access:</strong> Database concepts, tables, queries - foundation for MySQL</li>
+                            <li><strong>MS-Publisher:</strong> Basic design layouts</li>
+                            <li><strong>Internet & Email:</strong> Online research skills</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Secondary -->
+                <div class="education-card">
+                    <div class="edu-icon"><i class="fas fa-school"></i></div>
+                    <h3>West Africa Senior Secondary Education Certificate</h3>
+                    <h4>Christ The King College, Sierra Leone</h4>
+                    <p class="edu-date">2012</p>
+                    <p><strong>Subjects:</strong> Mathematics, English Language, Economics, Government, History</p>
+                </div>
+            </div>
+            
+            <!-- Additional Training -->
+            <div class="additional-training">
+                <h3>Additional Training</h3>
+                <div class="training-grid">
+                    <div class="training-item">
+                        <span class="year">2024</span>
+                        <span class="course">HTML, CSS, JavaScript, PHP</span>
+                        <span class="platform">FreeCodeCamp, W3Schools, Bro Code YouTube</span>
+                    </div>
+                    <div class="training-item">
+                        <span class="year">2024-2025</span>
+                        <span class="course">AI-Assisted Development</span>
+                        <span class="platform">DeepSeek, ChatGPT</span>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
      <button style="color:blue" onclick=" document.getElementById('contact').innerHTML =aboutMe() ">RETURN</button>
     ` ;
         return degree;
        };
+     function workExperience () {
+       const experience = `<section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            
+            <div class="timeline">
+                <!-- Teaching Experience -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Senior Teacher</h3>
+                        <h4>Muhammad Yadalleu English and Arabic School</h4>
+                        <ul>
+                            <li>Plan and deliver engaging lessons according to school curriculum</li>
+                            <li>Develop teaching materials and assess student progress</li>
+                            <li>Maintain accurate student records and communicate with parents</li>
+                            <li>Integrated basic computer literacy into lessons</li>
+                            <li>Assisted school administration with digital record-keeping</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Social Work Internship -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2017-2018</div>
+                    <div class="timeline-content">
+                        <h3>Social Work Intern</h3>
+                        <h4>Don Bosco Fambul (Child Protective Agency), Sierra Leone</h4>
+                        <ul>
+                            <li>Managed multiple case files including counseling, family tracing, education, rehabilitation, and reunification</li>
+                            <li>Conducted psycho-therapy sessions with clients</li>
+                            <li>Collaborated with multidisciplinary teams for client welfare</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Independent Learning Section -->
+            <div class="learning-journey">
+                <h3>Independent Web Developer (Self-Taught)</h3>
+                <p>Intensive self-study program: 10+ hours weekly alongside full-time teaching</p>
+                
+                <div class="learning-grid">
+                    <div class="learning-phase">
+                        <h4>Months 1-2</h4>
+                        <p><strong>HTML, CSS, JavaScript Basics</strong></p>
+                        <p>FreeCodeCamp, W3Schools, YouTube</p>
+                    </div>
+                    <div class="learning-phase">
+                        <h4>Months 3-4</h4>
+                        <p><strong>PHP Fundamentals</strong></p>
+                        <p>Documentation, online courses, AI assistance</p>
+                    </div>
+                    <div class="learning-phase">
+                        <h4>Months 5-6</h4>
+                        <p><strong>MySQL Database</strong></p>
+                        <p>Database design, complex queries</p>
+                    </div>
+                    <div class="learning-phase">
+                        <h4>Months 7-8</h4>
+                        <p><strong>Full-Stack Development</strong></p>
+                        <p>Started building school portal</p>
+                    </div>
+                    <div class="learning-phase">
+                        <h4>Months 9-10</h4>
+                        <p><strong>Advanced Features, Deployment</strong></p>
+                        <p>Completed and launched live project</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       
+       `;
+        return experience;
+     };
+    function strengthAbilities(){
+        const strength = ` <section class="strengths">
+        <div class="container">
+            <h2 class="section-title">Strengths & Personal Abilities</h2>
+            
+            <div class="strengths-grid">
+                <div class="strength-card">
+                    <i class="fas fa-rocket"></i>
+                    <h4>Self-Motivated</h4>
+                    <p>Learned complex technical skills independently while working full-time</p>
+                </div>
+                <div class="strength-card">
+                    <i class="fas fa-persist"></i>
+                    <h4>Persistent</h4>
+                    <p>Successfully debugged challenging code issues without giving up</p>
+                </div>
+                <div class="strength-card">
+                    <i class="fas fa-sync-alt"></i>
+                    <h4>Adaptable</h4>
+                    <p>Transitioned from Social Work to technology</p>
+                </div>
+                <div class="strength-card">
+                    <i class="fas fa-search"></i>
+                    <h4>Detail-Oriented</h4>
+                    <p>Careful attention to code syntax and database relationships</p>
+                </div>
+                <div class="strength-card">
+                    <i class="fas fa-hands"></i>
+                    <h4>Practical Learner</h4>
+                    <p>Learns best by building real projects</p>
+                </div>
+                <div class="strength-card">
+                    <i class="fas fa-puzzle-piece"></i>
+                    <h4>Problem-Solver</h4>
+                    <p>Approaches challenges systematically</p>
+                </div>
+                <div class="strength-card">
+                    <i class="fas fa-clock"></i>
+                    <h4>Reliable</h4>
+                    <p>Consistent in meeting deadlines</p>
+                </div>
+                <div class="strength-card">
+                    <i class="fas fa-comments"></i>
+                    <h4>Good Communicator</h4>
+                    <p>Enhanced by teaching experience</p>
+                </div>
+                <div class="strength-card">
+                    <i class="fas fa-heart"></i>
+                    <h4>Empathetic</h4>
+                    <p>Understands user needs from social work background</p>
+                </div>
+                <div class="strength-card">
+                    <i class="fas fa-dumbbell"></i>
+                    <h4>Hardworking</h4>
+                    <p>Balances multiple responsibilities effectively</p>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+        `;
+        return strength;
+    };
+
+    function interests(){
+        const interest = `<section class="interests">
+        <div class="container">
+            <h2 class="section-title">Interests & Passions</h2>
+            
+            <div class="interests-content">
+                <div class="interests-text">
+                    <p>I am passionate about the intersection of <strong>technology and social impact</strong>. I am keen to explore how web and mobile solutions can address local challenges in education, healthcare, and community development within The Gambia.</p>
+                    
+                    <div class="interest-tags">
+                        <span class="interest-tag"><i class="fas fa-heart"></i> Tech for Social Impact</span>
+                        <span class="interest-tag"><i class="fas fa-hand-holding-heart"></i> Volunteering</span>
+                        <span class="interest-tag"><i class="fas fa-laptop"></i> Coding & Technology</span>
+                        <span class="interest-tag"><i class="fas fa-book"></i> Reading</span>
+                        <span class="interest-tag"><i class="fas fa-chalkboard"></i> Teaching & Mentoring</span>
+                        <span class="interest-tag"><i class="fas fa-futbol"></i> Football/Sports</span>
+                        <span class="interest-tag"><i class="fas fa-users"></i> Community Engagement</span>
+                        <span class="interest-tag"><i class="fas fa-graduation-cap"></i> Lifelong Learning</span>
+                    </div>
+                    
+                    <p class="volunteer-note">Open to volunteering my technical skills for community-based projects or non-profits to gain further experience and contribute to local development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+              
+        `;
+        return interest;
+        
+    };
     </script>
-     <p
-         SKILLS
-TECHNICAL DEVELOPMENT SKILLS
-Frontend Development
- HTML5 for structure, CSS3 for responsive styling and layout, and JavaScript for implementing basic client-side
-interactivity and form validation. I prioritize creating clean, user-friendly interfaces.
-Backend Development:
-Skilled in PHP for building dynamic web applications. Experience includes creating secure user authentication systems
-(login/session management), processing form data, and generating dynamic page content based on user interaction.
-Database Management:
-Competent in MySQL for relational database design, writing queries to insert, retrieve, update, and delete data, and effectively
-integrating databases with PHP backend logic to power data-driven web applications.
-Development & Deployment Tools:
-Familiar with VS Code as a primary coding environment. Currently learning and implementing Git & GitHub for version control to
-manage code professionally. Experienced in deploying live websites to remote servers using cPanel-based hosting (InfinityFree).
-AI-Augmented Development:
-Proactively use AI tools like DeepSeek and ChatGPT as learning accelerators and coding assistants. This includes debugging
-complex errors, understanding new programming concepts, generating code snippets, and optimizing workflows—demonstrating
-modern, efficient problem-solving methods.
-PROFESSIONAL & TRANSFERABLE SKILLS
-Communication:
-Clear verbal and written communication; ability to explain technical concepts to non-technical stakeholders; report writing;
-presentation skills.
-Problem-Solving :
-Analytical thinking; systematic debugging; resourcefulness in finding solutions; logical reasoning.
-Project Management :
-Self-directed project execution; meeting deadlines; resource allocation; task prioritization.
-Interpersonal :
-Empathy; patience; active listening; collaboration; team player.
-Community & Client Understanding :
-Needs assessment (from Social Work background); understanding of community dynamics; client-centered approach.
-Teaching & Mentoring :
-Curriculum delivery; lesson planning; student assessment; patience in explaining concepts (from current teaching role)
-2023 - Present
-Adaptability :
-Quick learner; comfortable with new technologies; ability to work in diverse environments.
-Time Management :
-Balancing full-time teaching with intensive self-study; meeting project milestonesp> 
+    
     <footer>
         <div class="container">
             <p>&copy; 2025 Alusine Sillah. All rights reserved.</p>
