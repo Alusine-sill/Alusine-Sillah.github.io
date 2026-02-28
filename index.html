@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Alusine Sillah - Web Developer Portfolio</title>
+   
+</head>
+<body>
+    <header>
+        <div id="contact" class="container">
+            <h1>Alusine Sillah</h1>
+            <img style="width: 250px" src="asset\images\c.v img.png" alt="">
+            <p>Web Developer | PHP | JavaScript | MySQL</p>
+            <p>BSc Social Work, Fourah Bay College</p>
+            <div style="margin-top: 20px;">
+                <button class="btn" onclick=" document.getElementById('contact').innerHTML =aboutMe() ">About Me</button>
+                <button class="btn"><a style="color: white;" href= "https://myeas-school-portal.kesug.com" >View My Work</a></button>
+                <button class="btn" onclick=" document.getElementById('contact').innerHTML =contact() ">Contact Me</button>
+                <!--<a href="contact.html" class="btn">Contact Me</a>-->
+            </div>
+        </div>
+    </header>
+
+<script>
+      function contact() {
+      const comment = `</section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <p style="color:black">📧 Email: alusinesillah33048@gmail.com</p>
+                <p style="color:black">📞 Phone: 5383270</p>
+                <p style="color:black" >📍 Location: Bundung Borehole, The Gambia</p>
+                <p style="color:black">🔗 GitHub: <a href="https://github.com/Alusine-sill" target="_blank">github.com/Alusine-Sillah</a></p>
+            </div>
+            </div>
+    </section>
+    <a style="color:gold" href="index.html"> GO-BACK</a> 
+`;
+      return comment;
+    };
+       
+       function aboutMe() {
+        const detail = `<section class="section">
+        <div class="contact-info">
+            <div id="aboutMe">
+             <H2> ABOUT ME </H2>   
+            <p   style="text-align: center; max-width: 800px; margin: auto;color: black">
+              
+                I'm a self-taught web developer based in Bundung Borehole, The Gambia. With a background in Social Work from Fourah Bay College, I bring a unique human-centered approach to web development. Over the past 10 months, I've built a fully functional school portal using PHP, MySQL, and JavaScript, demonstrating my ability to learn complex skills independently and deliver practical solutions.
+            </p>
+            </div>
+           <button class="btn" onclick=" document.getElementById('aboutMe').innerHTML =technicalSkills() ">My Technical Skills</button> 
+           <button class="btn" onclick=" document.getElementById('aboutMe').innerHTML =projects() ">My Project</button>
+           <button class="btn" onclick=" document.getElementById('aboutMe').innerHTML =education() ">Educational History</button>  
+        </div>         
+    </section>
+    <a style="color:gold" href="index.html"> GO-BACK</a>` ;
+        return detail;
+       };
+      function technicalSkills() {
+        const skills = `<section class="section">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">PHP</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">Git & GitHub</span>
+                <span class="skill-tag">Responsive Design</span>
+                <span class="skill-tag">AI-Assisted Development</span>
+            </div>    
+        </div>      
+    </section>
+     <button style="color:blue" onclick=" document.getElementById('contact').innerHTML =aboutMe() ">RETURN</button>
+    ` ;
+        return skills;
+       };
+       function projects() {
+        const project = `<section class="section">                   
+            <div style="color:black" class="project-card">
+                <h3>School Management Portal</h3>
+                <p><strong>Technologies:</strong> PHP, MySQL, JavaScript, HTML/CSS</p>
+                <p>A comprehensive web application for managing school operations including student records, user authentication, and administrative dashboards. Built entirely through self-directed learning over 10 months.</p>
+                <p><strong>Key Features:</strong></p>
+                <ul style="margin-left: 20px; margin-bottom: 15px;">
+                    <li>Secure login system for administrators and teachers</li>
+                    <li>Complete student record management (CRUD operations)</li>
+                    <li>Responsive design for mobile and desktop</li>
+                    <li>Database-driven architecture</li>
+                </ul>
+                <a href="https://alusine-sill.github.io" target="_blank">View Code on GitHub →</a><br>
+                <a href="https://myeas-school-portal.kesug.com" target="_blank">View Live Demo →</a>
+            </div>
+        <button style="color:blue" onclick=" document.getElementById('contact').innerHTML =aboutMe() ">RETURN</button>
+    </section>     
+    ` ;
+        return project;
+       };
+       function education() {
+        const degree = `<section id="education" class="section">
+        <div class="container">
+            <h2>Education</h2>
+            <div style="text-align: center; color: black">
+                <h3>Bachelor of Science in Social Work</h3>
+                <p>Fourah Bay College, University of Sierra Leone</p>
+                <p>Graduated: 2017</p>
+            </div>
+        </div>
+     <button style="color:blue" onclick=" document.getElementById('contact').innerHTML =aboutMe() ">RETURN</button>
+    ` ;
+        return degree;
+       };
+    </script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Alusine Sillah. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
