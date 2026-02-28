@@ -17,6 +17,9 @@
             <p>BSc Social Work, Fourah Bay College</p>
             <div style="margin-top: 20px;">
                 <button class="btn" onclick=" document.getElementById('contact').innerHTML =aboutMe() ">About Me</button>
+                <button class="btn" onclick=" document.getElementById('contact').innerHTML =workExperience() ">Experiences</button>
+                <button class="btn" onclick=" document.getElementById('contact').innerHTML =strengthAbilities() ">Strength & Abilities</button>
+                <button class="btn" onclick=" document.getElementById('contact').innerHTML =interests() ">Interests</button>
                 <button class="btn"><a style="color: white;" href= "https://myeas-school-portal.kesug.com" >View My Work</a></button>
                 <button class="btn" onclick=" document.getElementById('contact').innerHTML =contact() ">Contact Me</button>
                 <!--<a href="contact.html" class="btn">Contact Me</a>-->
@@ -312,7 +315,7 @@
     ` ;
         return degree;
        };
-     function workExperience () {
+     function workExperience() {
        const experience = `<section id="experience" class="experience">
         <div class="container">
             <h2 class="section-title">Work Experience</h2>
