@@ -900,7 +900,7 @@ section {
     margin-top: 30px;
 }
 
-/* ===== CONTACT SECTION 
+/* ===== CONTACT SECTION ===== */
 .contact {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: var(--white);
@@ -981,7 +981,7 @@ section {
 
 .form-group input:focus,
 .form-group textarea:focus {
-    outline: 2px solid var(--white);===== */
+    outline: 2px solid var(--white);
 }
 
 /* ===== FOOTER ===== */
