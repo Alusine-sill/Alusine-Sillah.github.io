@@ -34,75 +34,98 @@
 
 <script>
       function contact() {
-      const comment = `<section id="contact" class="contact">
-        <div style="color:black" class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            
-            <div style="color:black" class="contact-grid">
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Phone</h4>
-                            <p style="color:black" >+220 5383270<br>+220 6927010<br>+232 74381717</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p style="color:black" >alusinesillah33048@gmail.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div style="color:black">
-                            <h4>Location</h4>
-                            <p style="color:black" >Bundung Borehole, The Gambia</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <div>
-                            <h4>GitHub</h4>
-                            <p style="color:black" ><a style="color:black"  href="https://github.com/Alusine-sill" target="_blank">github.com/Alusine-sill</a></p>
-                        </div>
-                    </div>
-                    
-                    <div style="color:black" class="cv-download">
-                        <a href="#" class="btn btn-primary" onclick="window.print()">
-                            <i class="fas fa-download"></i> Download CV (Print)
-                        </a>
+      const comment = `<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+220 5383270<br>+220 6927010<br>+232 74381717</p>
                     </div>
                 </div>
                 
-                <div class="contact-info">
-                    <h3>Send Me a Message</h3>
-                    <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="subject" placeholder="Subject">
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>alusinesillah33048@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Bundung Borehole, The Gambia</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <div>
+                        <h4>GitHub</h4>
+                        <p><a href="https://github.com/Alusine-sill" target="_blank">github.com/Alusine-sill</a></p>
+                    </div>
                 </div>
             </div>
+            
+            <div class="contact-form">
+                <h3>Send Me a Message</h3>
+                
+                <!-- UPDATED FORM - Replace your current form with this -->
+                <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+                    
+                    <!-- Your Access Key from Web3Forms -->
+                    <input type="hidden" name="access_key" value="YOUR-ACCESS-KEY-HERE">
+                    
+                    <!-- Optional: Set a custom subject -->
+                    <input type="hidden" name="subject" value="New message from Alusine's Portfolio">
+                    
+                    <!-- Optional: Redirect after success (create a thanks.html page) -->
+                    <!-- <input type="hidden" name="redirect" value="https://alusine-sill.github.io/thanks.html"> -->
+                    
+                    <!-- Honeypot spam protection (hidden from users) -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email Address" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" name="phone" placeholder="Your Phone (optional)">
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    
+                    <!-- Simple CAPTCHA (helps prevent spam) -->
+                    <div class="h-captcha" data-captcha="true"></div>
+                    
+                    <button type="submit" class="btn btn-primary" id="submit-btn">
+                        Send Message
+                    </button>
+                    
+                    <!-- Success message will appear here -->
+                    <div id="form-status" style="margin-top: 20px;"></div>
+                </form>
+                <!-- End of updated form -->
+                
+            </div>
         </div>
-    </section>
-               
+    </div>
+</section>
             
     <a style="color:gold" href="index.html"> GO-BACK</a> 
 `;
@@ -468,5 +491,53 @@
     </footer>
       <!-- JavaScript -->
     <script src="script.js"></script>
+    <!-- Add this before closing body tag -->
+<script src="https://web3forms.com/client/script.js" async defer></script>
+
+<script>
+    // Optional: Handle form submission with custom success message
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevent default form submission
+        
+        const form = e.target;
+        const formData = new FormData(form);
+        const submitBtn = document.getElementById('submit-btn');
+        const statusDiv = document.getElementById('form-status');
+        
+        // Show loading state
+        submitBtn.textContent = 'Sending...';
+        submitBtn.disabled = true;
+        
+        // Submit via fetch
+        fetch(form.action, {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                // Success!
+                statusDiv.innerHTML = '<p style="color: green; font-weight: bold;">✓ Thank you! Your message has been sent. I\'ll get back to you soon.</p>';
+                form.reset(); // Clear the form
+            } else {
+                // Error
+                statusDiv.innerHTML = '<p style="color: red;">❌ Something went wrong. Please try again or email me directly.</p>';
+            }
+        })
+        .catch(error => {
+            statusDiv.innerHTML = '<p style="color: red;">❌ Network error. Please check your connection and try again.</p>';
+        })
+        .finally(() => {
+            // Reset button
+            submitBtn.textContent = 'Send Message';
+            submitBtn.disabled = false;
+            
+            // Hide success message after 10 seconds
+            setTimeout(() => {
+                statusDiv.innerHTML = '';
+            }, 10000);
+        });
+    });
+</script>
 </body>
 </html>
