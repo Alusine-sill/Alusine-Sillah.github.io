@@ -70,7 +70,7 @@
             border-radius: 20px;
             font-size: 0.9em;
         }
-        /*.contact-info {
+        .contact-info {
             text-align: center;
             background: #ecf0f1;
             padding: 20px;
@@ -78,7 +78,7 @@
         }
         .contact-info p {
             margin: 10px 0;
-        }*/
+        }
         .btn {
             display: inline-block;
             background: #2c3e50;
