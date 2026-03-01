@@ -228,7 +228,7 @@ section {
     transition: var(--transition);
 }
 
- ===== HERO SECTION ===== 
+/* ===== HERO SECTION ===== */
 .hero {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: var(--white);
@@ -921,7 +921,7 @@ section {
 }
 
 .contact-info h3 {
-    font-size: 1.8rem;
+    font-size: 1rem;
     margin-bottom: 30px;
 }
 
