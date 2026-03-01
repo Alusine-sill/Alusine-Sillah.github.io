@@ -101,7 +101,7 @@
             color : black;
         }
 
-/* ===== RESET & BASE STYLES ===== */
+/* ===== RESET & BASE STYLES ===== 
 * {
     margin: 0;
     padding: 0;
@@ -157,7 +157,7 @@ section {
     border-radius: 2px;
 }
 
-/* ===== NAVIGATION ===== */
+===== NAVIGATION ===== 
 .navbar {
     background: var(--white);
     box-shadow: var(--shadow);
@@ -228,7 +228,7 @@ section {
     transition: var(--transition);
 }
 
-/* ===== HERO SECTION ===== */
+ ===== HERO SECTION ===== 
 .hero {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: var(--white);
@@ -308,7 +308,7 @@ section {
     animation: fadeIn 1s ease;
 }
 
-/* ===== PERSONAL DETAILS BAR ===== */
+ ===== PERSONAL DETAILS BAR ===== 
 .personal-details-bar {
     background: var(--white);
     padding: 20px 0;
@@ -343,7 +343,7 @@ section {
     color: var(--secondary-color);
 }
 
-/* ===== ABOUT SECTION ===== */
+ ===== ABOUT SECTION ===== 
 .about-content {
     max-width: 900px;
     margin: 0 auto;
@@ -376,7 +376,7 @@ section {
     color: var(--secondary-color);
 }
 
-/* ===== SKILLS SECTION ===== */
+ ===== SKILLS SECTION ===== 
 .skills {
     background: var(--white);
 }
@@ -472,7 +472,7 @@ section {
     transform: translateY(-2px);
 }
 
-/* ===== PROJECTS SECTION ===== */
+ ===== PROJECTS SECTION ===== 
 .featured-project {
     background: var(--white);
     border-radius: 10px;
@@ -547,7 +547,7 @@ section {
     box-shadow: var(--shadow);
 }
 
-/* ===== EXPERIENCE SECTION ===== */
+ ===== EXPERIENCE SECTION ===== 
 .timeline {
     position: relative;
     max-width: 800px;
@@ -633,7 +633,7 @@ section {
     margin-bottom: 5px;
 }
 
-/* Learning Journey */
+==== Learning Journey =====
 .learning-journey {
     margin-top: 60px;
 }
@@ -686,7 +686,7 @@ section {
     color: var(--primary-color);
 }
 
-/* ===== EDUCATION SECTION ===== */
+===== EDUCATION SECTION ===== 
 .education-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -806,7 +806,7 @@ section {
     color: var(--text-light);
 }
 
-/* ===== STRENGTHS SECTION ===== */
+ ===== STRENGTHS SECTION ===== 
 .strengths-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -844,7 +844,7 @@ section {
     color: var(--text-light);
 }
 
-/* ===== INTERESTS SECTION ===== */
+ ===== INTERESTS SECTION ===== 
 .interests {
     background: var(--white);
 }
@@ -900,8 +900,8 @@ section {
     margin-top: 30px;
 }
 
-/* ===== CONTACT SECTION ===== */
-.contact {
+===== CONTACT SECTION ===== */
+/*.contact {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: var(--white);
 }
@@ -984,7 +984,7 @@ section {
     outline: 2px solid var(--white);
 }
 
-/* ===== FOOTER ===== */
+/*===== FOOTER ===== 
 footer {
     background: var(--dark-color);
     color: var(--white);
@@ -1014,7 +1014,7 @@ footer .container {
     transform: translateY(-3px);
 }
 
-/* ===== ANIMATIONS ===== */
+===== ANIMATIONS ===== 
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -1035,7 +1035,7 @@ footer .container {
     }
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
+===== RESPONSIVE DESIGN ===== 
 @media (max-width: 992px) {
     .hero-content {
         grid-template-columns: 1fr;
@@ -1138,4 +1138,4 @@ footer .container {
     .navbar, .hero-buttons, .contact-form, .cv-download, footer {
         display: none;
     }
-}
+}*/
