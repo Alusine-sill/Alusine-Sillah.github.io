@@ -1,3 +1,79 @@
+// Get form elements
+const contactForm = document.getElementById('contactForm');
+const submitBtn = document.getElementById('submit-btn');
+const successMsg = document.getElementById('success-message');
+const errorMsg = document.getElementById('error-message');
+const formFields = contactForm.querySelectorAll('input, textarea, .h-captcha, button:not(#submit-btn)');
+
+// Hide success/error messages initially
+successMsg.style.display = 'none';
+errorMsg.style.display = 'none';
+
+// Function to show form again after success
+window.showFormAgain = function() {
+    successMsg.style.display = 'none';
+    contactForm.reset();
+    // Reset hCaptcha if needed
+    if (typeof hcaptcha !== 'undefined') {
+        hcaptcha.reset();
+    }
+}
+
+// Handle form submission
+contactForm.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    // Prepare form data
+    const formData = new FormData(contactForm);
+    
+    // Show loading state
+    submitBtn.textContent = 'Sending...';
+    submitBtn.disabled = true;
+    
+    try {
+        // Send to Web3Forms
+        const response = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: formData
+        });
+        
+        const data = await response.json();
+        
+        if (data.success) {
+            // Hide the form
+            formFields.forEach(field => {
+                field.style.display = 'none';
+            });
+            submitBtn.style.display = 'none';
+            
+            // Show success message
+            successMsg.style.display = 'block';
+            
+            // Optional: Track in Google Analytics or just celebrate!
+            console.log('Message sent successfully!');
+        } else {
+            // Show error message
+            errorMsg.style.display = 'block';
+            
+            // Hide error after 5 seconds
+            setTimeout(() => {
+                errorMsg.style.display = 'none';
+            }, 5000);
+        }
+    } catch (error) {
+        // Show error message
+        errorMsg.style.display = 'block';
+        
+        setTimeout(() => {
+            errorMsg.style.display = 'none';
+        }, 5000);
+    } finally {
+        // Reset button
+        submitBtn.textContent = 'Send Message';
+        submitBtn.disabled = false;
+    }
+});
+
 // Mobile Navigation Toggle
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
