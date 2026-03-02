@@ -1139,3 +1139,26 @@ footer .container {
         display: none;
     }
 }
+         .contact-form {
+    position: relative;
+    min-height: 400px;
+}
+
+#success-message, #error-message {
+    animation: fadeIn 0.5s ease;
+}
+
+#success-message button:hover {
+    background: #1e7a34 !important;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
