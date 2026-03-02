@@ -34,44 +34,41 @@
 
 <script>
       function contact() {
-      const comment = `<!-- Contact Section -->
+      const comment = `<!-- Replace your entire contact form with this -->
 <section id="contact" class="contact">
-    <div style="color: black" class="container">
+    <div class="container">
         <h2 class="section-title">Get In Touch</h2>
         
         <div class="contact-grid">
             <div class="contact-info">
+                <!-- Your contact info stays the same -->
                 <h3>Contact Information</h3>
-                
                 <div class="contact-item">
                     <i class="fas fa-phone"></i>
                     <div>
                         <h4>Phone</h4>
-                        <p style="color: black">+220 5383270<br>+220 6927010<br>+232 74381717</p>
+                        <p>+220 5383270<br>+220 6927010<br>+232 74381717</p>
                     </div>
                 </div>
-                
                 <div class="contact-item">
                     <i class="fas fa-envelope"></i>
                     <div>
                         <h4>Email</h4>
-                        <p style="color: black">alusinesillah33048@gmail.com</p>
+                        <p>alusinesillah33048@gmail.com</p>
                     </div>
                 </div>
-                
                 <div class="contact-item">
                     <i class="fas fa-map-marker-alt"></i>
                     <div>
                         <h4>Location</h4>
-                        <p style="color: black">Bundung Borehole, The Gambia</p>
+                        <p>Bundung Borehole, The Gambia</p>
                     </div>
                 </div>
-                
                 <div class="contact-item">
                     <i class="fab fa-github"></i>
                     <div>
                         <h4>GitHub</h4>
-                        <p style="color: black"><a style="color: black" href="https://github.com/Alusine-sill" target="_blank">github.com/Alusine-sill</a></p>
+                        <p><a href="https://github.com/Alusine-sill" target="_blank">github.com/Alusine-sill</a></p>
                     </div>
                 </div>
             </div>
@@ -79,20 +76,17 @@
             <div class="contact-form">
                 <h3>Send Me a Message</h3>
                 
-                <!-- UPDATED FORM - Replace your current form with this -->
-                <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+                <!-- UPDATED FORM WITH BETTER MESSAGE HANDLING -->
+                <form id="contactForm">
                     
-                    <!-- Your Access Key from Web3Forms -->
+                    <!-- Your Access Key -->
                     <input type="hidden" name="access_key" value="140f6ab8-1e7c-48fd-bc9e-3e019e5a46e6">
                     
                     <!-- Optional: Set a custom subject -->
-                    <input type="hidden" name="subject" value="New message from your website : Alusine's Portfolio">
+                    <input type="hidden" name="subject" value="New message from Alusine's Portfolio">
                     
-                    <!-- Optional: Redirect after success (create a thanks.html page) -->
-                   <input type="hidden" name="redirect" value="https://alusine-sill.github.io/thanks.html"> 
-                    
-                    <!-- Honeypot spam protection (hidden from users) -->
-                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <!-- Honeypot spam protection -->
+                    <input type="checkbox" name="botcheck" style="display: none;">
                     
                     <div class="form-group">
                         <input type="text" name="name" placeholder="Your Name" required>
@@ -110,28 +104,35 @@
                         <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
                     </div>
                     
-                    <!-- Simple CAPTCHA (helps prevent spam) -->
+                    <!-- hCaptcha -->
                     <div class="h-captcha" data-captcha="true"></div>
                     
                     <button type="submit" class="btn btn-primary" id="submit-btn">
                         Send Message
-                    </button>
+                    </button>     
+                    <!-- Success Message Area (initially hidden) -->
+                    <div id="success-message" style="display: none; margin-top: 20px; padding: 15px; background-color: #d4edda; color: #155724; border-radius: 5px; text-align: center;">
+                        <i class="fas fa-check-circle" style="font-size: 2rem; margin-bottom: 10px;"></i>
+                        <h3 style="margin-bottom: 10px;">Thank You! 🎉</h3>
+                        <p>Your message has been sent successfully. I'll get back to you as soon as possible.</p>
+                        <button onclick="showFormAgain()" style="margin-top: 10px; padding: 8px 20px; background: #155724; color: white; border: none; border-radius: 5px; cursor: pointer;">Send Another Message</button>
+                    </div>
                     
-                    <!-- Success message will appear here -->
-                    <div id="form-status" style="margin-top: 20px;"></div>
+                    <!-- Error Message Area -->
+                    <div id="error-message" style="display: none; margin-top: 20px; padding: 15px; background-color: #f8d7da; color: #721c24; border-radius: 5px; text-align: center;">
+                        <i class="fas fa-exclamation-circle" style="font-size: 2rem; margin-bottom: 10px;"></i>
+                        <h3 style="margin-bottom: 10px;">Oops! Something went wrong</h3>
+                        <p>Please try again or email me directly at alusinesillah33048@gmail.com</p>
+                    </div>
                 </form>
-                <!-- End of updated form -->
-                
             </div>
         </div>
     </div>
 </section>
-            
-    <a style="color:gold" href="index.html"> GO-BACK</a> 
+<a style="color:gold" href="index.html"> GO-BACK</a> 
 `;
       return comment;
-    };
-       
+    };   
        function aboutMe() {
         const detail = `<section class="section">
         <div style="color:black" class="contact-info">
