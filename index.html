@@ -292,10 +292,7 @@
                     <div>
                     <p id="loginSample"></p>
                     <i>SHOW Log-in<i>
-                    <button style="color:blue" onclick="document.getElementById('loginSample').innerHTML=' USERNAME :  Teacher <br> PASSWORD :  123456 <br><button style="color:red" onclick=" document.getElementById('loginSample').innerHTML ='' ">CLOSE</button>'">SAMPLE</button>
-                    
-                   
-                   
+                    <button style="color:blue" onclick="sample()">SAMPLE</button>
                     <br>
                    </div>
                    
@@ -543,6 +540,13 @@
         `;
         return interest;
         
+    };
+    function sample(){
+        const userName = 'USERNAME : Teacher';
+        const passWord = 'PASSWORD : 123456';
+        const closeBtn = `<button style="color:red" onclick="document.getElementById('loginSample').innerHTML ='' ">CLOSE</button>`;
+        const samp = document.getElementById('loginSample').innerHTML=userName+'<br>'+passWord '<br>'+closeBtn;  
+        return samp;
     };
     </script>
     
