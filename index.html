@@ -23,6 +23,7 @@
             <div style="margin-top: 20px;">
                 <button class="btn" onclick=" document.getElementById('contact').innerHTML =aboutMe() ">About Me</button>
                 <button class="btn" onclick=" document.getElementById('contact').innerHTML =workExperience() ">Experiences</button>
+               
                 <button class="btn" onclick=" document.getElementById('contact').innerHTML =strengthAbilities() ">Strength & Abilities</button>
                 <button class="btn" onclick=" document.getElementById('contact').innerHTML =interests() ">Interests</button>
                 <button class="btn"><a style="color: white;" href= "https://myeas-school-portal.kesug.com" >View My Work</a></button>
@@ -158,7 +159,8 @@
         </div>
             
             </div>
-           <button class="btn" onclick=" document.getElementById('aboutMe').innerHTML =technicalSkills() ">My Technical Skills</button> 
+           <button class="btn" onclick=" document.getElementById('aboutMe').innerHTML =technicalSkills() ">My Technical Skills</button>
+           <button class="btn" onclick=" document.getElementById('aboutMe').innerHTML =Trainnings() ">Trainning and Quality Assurance Highlights</button> 
            <button class="btn" onclick=" document.getElementById('aboutMe').innerHTML =projects() ">My Project</button>
            <button class="btn" onclick=" document.getElementById('aboutMe').innerHTML =education() ">Educational History</button>  
         </div>         
@@ -204,6 +206,22 @@
      <button style="color:blue" onclick=" document.getElementById('contact').innerHTML =aboutMe() ">RETURN</button>
     ` ;
         return skills;
+       };
+       function Trainnings(){
+           const trainning =`TRAINING & QUALITY ASSURANCE HIGHLIGHTS
+
+Demonstrated through Teaching and Social Work Experience
+
+Skill	Application	Evidence
+Training Material Development	Created lesson plans, teaching resources, and instructional content for diverse learners	Muhammad Yadalieu School (2023-present)
+Performance Monitoring	Assessed student progress through tests, assignments, and observations	Teaching role
+Feedback Delivery	Provided constructive feedback to students and parents regularly	Teaching role
+Record Keeping	Maintained accurate attendance and performance records	Teaching role
+Case Management	Managed multiple client cases simultaneously	Don Bosco Fambul
+Client Needs Assessment	Evaluated client situations and developed appropriate interventions	Social Work training
+Digital Tool Proficiency	Built custom web applications, proficient in Google Docs, Excel, and online tools	School Portal Project
+Communication	Clear verbal and written communication in English and local languages	All roles`;
+           return trainning;
        };
        function projects() {
         const project = `<section class="section">
