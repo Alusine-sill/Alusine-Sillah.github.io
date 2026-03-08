@@ -289,12 +289,35 @@
                         <img src="Screenshot.jpg" alt="School Portal Screenshot">
                     </div>
                    
-                    <div>
-                    <p id="loginSample"></p>
-                    <i>SHOW Log-in<i>
-                    <button style="color:blue" onclick="sample()">SAMPLE</button>
-                    <br>
-                   </div>
+                   <!-- Container for the sample login -->
+<div id="loginSample"></div>
+
+<!-- Button to show sample credentials -->
+<button onclick="showLoginSample()" style="
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+">
+    Show Sample Login
+</button>
+
+<!-- Or use toggle button -->
+<button onclick="toggleLoginSample()" style="
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 10px;
+">
+    Toggle Sample Login
+</button>
                    
                     
         <button style="color:blue" onclick=" document.getElementById('contact').innerHTML =aboutMe() ">RETURN</button>
@@ -541,18 +564,7 @@
         return interest;
         
     };
-          
-    function sample(){      
-        const userName = 'USERNAME : Teacher ';
-        const passWord = 'PASSWORD : 123456 ';
-        const samp =  document.getElementById("loginSample").innerHTML = userName + '<br>' + passWord +'<br> <button style="color:red" onclick="clear()">Close</button>'; 
-        return samp;
-    };
-     function clear(){
-            const Clear = document.getElementById("loginSample").innerHTML = "ytesting";
-            return Clear;
-     };
-    document.write(clear());
+   
     </script>
     
     <footer>
