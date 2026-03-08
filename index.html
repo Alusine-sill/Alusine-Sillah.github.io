@@ -545,13 +545,13 @@
     function sample(){      
         const userName = 'USERNAME : Teacher ';
         const passWord = 'PASSWORD : 123456 ';
-         samp =  document.getElementById("loginSample").innerHTML = userName + '<br>' + passWord +' <br> <button style="color:red" onclick="clear()">Close</button>' ; 
-        function clear (){
-            samp = document.getElementById("loginSample").innerHTML = '';
-            return samp;
+         samp =  document.getElementById("loginSample").innerHTML = userName + '<br>' + passWord +' <br> <button style="color:red" onclick="clear()">Close</button>' ;      
         };
         return samp;
     };
+     function clear (){
+            const samp = document.getElementById("loginSample").innerHTML = '';
+            return samp;
     </script>
     
     <footer>
