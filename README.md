@@ -4,9 +4,10 @@ Welcome to my personal portfolio website! I'm Alusine Sillah, a Web Developer an
 
 ## About Me
 
-I hold a BSc in Social Work from Fourah Bay College, University of Sierra Leone, and have completed extensive self-directed learning in web development over the past 10 months. My unique background combines community understanding with technical skills.
+I hold a BSc in Social Work from Fourah Bay College, University of Sierra Leone, and have completed extensive self-directed learning in web development over the past. My unique background combines community understanding with technical skills.
 
 ## Featured Project: School Portal
+## Featured Project: StoreManagement 
 
 My flagship project is a fully functional school management system built with:
 - **PHP** for backend logic
@@ -15,6 +16,7 @@ My flagship project is a fully functional school management system built with:
 - **HTML5/CSS3** for responsive design
 
 🔗 [View Live Project](https://myeas-school-portal.kesug.com)
+   [View Live Project](https://asillstoremanager.kesug.com)
 
 ## Skills
 
