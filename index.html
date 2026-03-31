@@ -129,6 +129,14 @@
         const detail = `<section class="section">
         <div style="color:black" class="contact-info">
             <div id="aboutMe">
+
+            </div>
+           <button class="btn" onclick=" document.getElementById('aboutMe').innerHTML =technicalSkills() ">My Technical Skills</button>
+           <button class="btn" onclick=" document.getElementById('aboutMe').innerHTML =Trainnings() ">Trainning and Quality Assurance Highlights</button> 
+           <button class="btn" onclick=" document.getElementById('aboutMe').innerHTML =projects() ">My Project</button>
+           <button class="btn" onclick=" document.getElementById('aboutMe').innerHTML =education() ">Educational History</button>  
+        </div>         
+            
              <H2> ABOUT ME </H2>   
             <p   style="text-align: center; max-width: 800px; margin: auto;color: black">
            A highly motivated and solutions-focused Web Developer with a solid academic foundation in Social Work from Fourah Bay College, University of Sierra Leone, and practical teaching experience. Over the past, I have engaged in intensive, self-directed learning to master web development technologies, culminating in the successful creation of a fully functional, database-driven school portal currently deployed and running on InfinityFree.</p>
@@ -158,12 +166,7 @@
             </div>
         </div>
             
-            </div>
-           <button class="btn" onclick=" document.getElementById('aboutMe').innerHTML =technicalSkills() ">My Technical Skills</button>
-           <button class="btn" onclick=" document.getElementById('aboutMe').innerHTML =Trainnings() ">Trainning and Quality Assurance Highlights</button> 
-           <button class="btn" onclick=" document.getElementById('aboutMe').innerHTML =projects() ">My Project</button>
-           <button class="btn" onclick=" document.getElementById('aboutMe').innerHTML =education() ">Educational History</button>  
-        </div>         
+            
     </section>
     <a style="color:gold" href="index.html"> GO-BACK</a>` ;
         return detail;
