@@ -36,10 +36,12 @@
 
 <script>
      function openProject() {
-        document.getElementById('contact').innerHTML=` 
+            const projects =` <p>Select To View My</p>
            <button class="btn"><a style="color: white;" href= "https://asillstoremanager.kesug.com" >View StoreManager Software</a></button>
            <button class="btn"><a style="color: white;" href= "https://myeas-school-portal.kesug.com" >View School Portal </a></button>
-         `  
+           <a style="color:red" href="index.html" >Return</a>
+         `;
+         return projects;
     };
       function contact() {
       const comment = `<!-- Contact Section -->
