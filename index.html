@@ -26,7 +26,8 @@
                
                 <button class="btn" onclick=" document.getElementById('contact').innerHTML =strengthAbilities() ">Strength & Abilities</button>
                 <button class="btn" onclick=" document.getElementById('contact').innerHTML =interests() ">Interests</button>
-                <button class="btn"><a style="color: white;" href= "https://myeas-school-portal.kesug.com" >View My Work</a></button>
+               
+                <button class="btn" style="color: white;" onclick="openProject()">View My Work</button>
                 <button class="btn" onclick=" document.getElementById('contact').innerHTML =contact() ">Contact Me</button>
                 <!--<a href="contact.html" class="btn">Contact Me</a>-->
             </div>
@@ -34,6 +35,14 @@
     </header>
 
 <script>
+    function openProject() {
+        addEventListener("click"){
+          document.getElementById().innerHTML=` 
+          <button class="btn"><a style="color: white;" href= "https://myeas-school-portal.kesug.com" >View My School Portal</a></button>
+           <button class="btn"><a style="color: white;" href= "https://myeas-school-portal.kesug.com" >View My StoreManager Software</a></button>
+          ` 
+        }
+    };
       function contact() {
       const comment = `<!-- Contact Section -->
 <section id="contact" class="contact">
