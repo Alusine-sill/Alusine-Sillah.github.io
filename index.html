@@ -20,7 +20,7 @@
             <img style="width: 250px" src="c.v img.png" alt="My Profile">
             <p>Web Developer | PHP | JavaScript | MySQL</p>
             <p>BSc Social Work, Fourah Bay College</p>
-            <div style="margin-top: 20px; background:yellow;" >
+            <div style="margin-top: 20px;" >
                 <button class="btn" onclick=" document.getElementById('contact').innerHTML =aboutMe() ">About Me</button>
                 <button class="btn" onclick=" document.getElementById('contact').innerHTML =workExperience() ">Experiences</button>
                
@@ -463,7 +463,7 @@
     };   
        function aboutMe() {
         const detail = `<section class="section">
-        </div>
+        <div style="background:gold">
            <button class="btn" onclick=" document.getElementById('aboutMe').innerHTML =technicalSkills() ">My Technical Skills</button>
            <button class="btn" onclick=" document.getElementById('aboutMe').innerHTML =Trainnings() ">Trainning and Quality Assurance Highlights</button> 
            <button class="btn" onclick=" document.getElementById('aboutMe').innerHTML =openProject() ">My Project</button>
